@@ -12,7 +12,8 @@
 // Output: [10.5, 15.75, 21]
 
 function afterTax(arr, tax) {
-  // TODO YOUR CODE HERE
+let taxes = arr.map ( t => t += t*tax)
+return (taxes)
 }
 
 // ---------------------------------------------
@@ -36,7 +37,7 @@ const exampleOutput = [
 ]
 
 function convertToObjects(arr) {
-  // TODO YOUR CODE HERE
+arr.map(item => Object.assign({}, item, { href: customFunction(item.name) }));
 }
 
 // ---------------------------------------------
@@ -67,5 +68,7 @@ const exampleTotal = [
 // Output: 35
 
 function totalReceipt(arr) {
-  // TODO YOUR CODE HERE
+let n = arr.find( b => b.price.reduce(function (accumulator, current) {
+  return accumulator + current}))
+  return n
 }

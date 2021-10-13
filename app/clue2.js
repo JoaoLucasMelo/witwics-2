@@ -10,7 +10,8 @@
 // output: 4
 
 function returnIndex(arr, str) {
-  // TODO your code here
+  let i =  arr.indexOf(str)
+  return (i)
 }
 
 //-------------------------------------------
@@ -23,7 +24,9 @@ function returnIndex(arr, str) {
 // output: true
 
 function hasName(arr, name) {
-  // TODO your code here
+  let name1 = arr.includes(name)
+  return name1
+  
 }
 
 //-------------------------------------------
@@ -43,8 +46,11 @@ let staff = [{ id: 1, name: 'Jon' }, { id: 2, name: 'Yuli' }, { id: 21, name: 'P
 { id: 881, name: 'Paul' }, { id: 0, name: 'Jon' }, { id: 999, name: 'Timma' }]
 
 function findById(id) {
-  // TODO YOUR CODE HERE
-}
+let user = staff.find( staff => staff.id == id)
+return user
+
+  
+  }
 
 //-------------------------------------------
 
@@ -70,9 +76,9 @@ let theBand = {
 }
 
 function bandMemberDetails(name) {
-  // TODO YOUR CODE HERE
+let member = theBand.members.find( mem => mem.name.includes(name))
+return `${member.name} is in the band and plays the ${member.instrument}`
 }
-
 //-------------------------------------------
 
 // Looks like we just missed them and they are trying to catch a flight out of here, we have their bank account and can see all the transactions, but don't know where they are headed. We need you to check the potential destinations and whether or not they are flying first class. 
@@ -106,5 +112,8 @@ let flights = [{
 }]
 
 function flightCost(destination, firstClass) {
-  // TODO YOUR CODE HERE
+  let airport = flights.find( f => f.from(destination))
+console.log(airport)
 }
+
+

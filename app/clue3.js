@@ -26,7 +26,9 @@
 */
 
 function platesByCharacters(arr) {
-  // TODO YOUR CODE HERE
+let plates = arr.filter ( arr => arr.length == 7 )
+return plates
+
 }
 
 // --------------------------------
@@ -57,7 +59,8 @@ function platesByCharacters(arr) {
 */
 
 function filterPlatesByCitations(plates, numberOfCitations) {
-  // TODO YOUR CODE HERE
+let least = plates.filter( plates => plates.citations >= numberOfCitations)
+return least
 }
 
 // --------------------------------
@@ -70,7 +73,7 @@ function filterPlatesByCitations(plates, numberOfCitations) {
 // output: ['ETMYDST','GETAWAY','NOTMINE']
 
 function sortPlates(arr) {
-  // TODO YOUR CODE HERE
+return arr.sort()
 }
 
 // --------------------------------
@@ -98,7 +101,7 @@ function sortPlates(arr) {
 */
 
 function sortPlatesByCitations(arr) {
-  // TODO YOUR CODE HERE
+
 }
 
 // --------------------------------
@@ -127,5 +130,6 @@ function sortPlatesByCitations(arr) {
 */
 
 function sortPlatesByCountry(arr) {
-  // TODO YOUR CODE HERE
+
+
 }

@@ -29,7 +29,7 @@ const propertyExample = {
 // 1. Write a function that will take in a property and return true if the property has an escape tunnel, false otherwise
 
 function hasEscapeTunnel(property) {
-  // TODO write code here
+return propertyExample.includes(escapeTunnel.property == true)
 }
 
 
@@ -40,7 +40,8 @@ function hasEscapeTunnel(property) {
 // 2. Write a function that will take in a property and return the value of the escapeTunnel property, or undefined if the property does not have any of the appropriate property values to get to escapeTunnel (hint: use the optional chaining (elvis) operator)
 
 function hasEscapeTunnelSafe(property) {
-  // TODO write code here
+  let et = property?
+return et
 }
 
 
