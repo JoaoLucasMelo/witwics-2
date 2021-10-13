@@ -112,8 +112,12 @@ let flights = [{
 }]
 
 function flightCost(destination, firstClass) {
-  let airport = flights.find( f => f.from(destination))
-console.log(airport)
+  let airport = flights.find( f => f.to == (destination))
+if (firstClass){
+  return airport.prices.firstClass
+} else{
+  return airport.prices.standard
+}
 }
 
 

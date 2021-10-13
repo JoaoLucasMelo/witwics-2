@@ -101,7 +101,9 @@ return arr.sort()
 */
 
 function sortPlatesByCitations(arr) {
-
+  return arr.sort((a, b) => {
+    return b.citations - a.citations
+  })
 }
 
 // --------------------------------
@@ -130,6 +132,7 @@ function sortPlatesByCitations(arr) {
 */
 
 function sortPlatesByCountry(arr) {
-
-
+return  arr.sort((a, b) => {
+ return (a.country > b.country) ? 1 : -1
+})
 }
